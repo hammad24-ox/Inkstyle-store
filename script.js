@@ -1,1 +1,1 @@
-// InkStyle JavaScript
+console.log("InkStyle Store Loaded Successfully!");
