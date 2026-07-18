@@ -1,0 +1,1 @@
+// InkStyle JavaScript
