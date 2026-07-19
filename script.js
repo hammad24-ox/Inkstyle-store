@@ -5,6 +5,7 @@ let buttons = document.querySelectorAll(".add-cart");
 let cartItems = document.getElementById("cart-items");
 let cartCount = document.getElementById("cart-count");
 
+
 buttons.forEach(button => {
 
   button.addEventListener("click", () => {
@@ -36,17 +37,18 @@ function updateCart(){
 
     removeBtn.onclick = function(){
 
-        cart.splice(index, 1);
+      cart.splice(index, 1);
 
-        updateCart();
+      updateCart();
 
     };
+
 
     li.appendChild(removeBtn);
 
     cartItems.appendChild(li);
 
-});
+  });
 
 
   cartCount.innerText = cart.length;
