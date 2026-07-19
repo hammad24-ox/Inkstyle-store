@@ -24,15 +24,29 @@ function updateCart(){
 
   cartItems.innerHTML = "";
 
-  cart.forEach(item => {
+  cart.forEach((item, index) => {
 
     let li = document.createElement("li");
 
-    li.innerText = item;
+    li.innerText = item + " ";
+
+    let removeBtn = document.createElement("button");
+
+    removeBtn.innerText = "Remove";
+
+    removeBtn.onclick = function(){
+
+        cart.splice(index, 1);
+
+        updateCart();
+
+    };
+
+    li.appendChild(removeBtn);
 
     cartItems.appendChild(li);
 
-  });
+});
 
 
   cartCount.innerText = cart.length;
