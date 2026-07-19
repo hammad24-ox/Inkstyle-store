@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,50 +14,80 @@
 
 </head>
 
+
 <body>
+
 
 <!-- Navbar -->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
 
 <div class="container">
+
 
 <a class="navbar-brand fw-bold fs-3" href="#">
 InkStyle
 </a>
 
-<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarMenu">
+
 <span class="navbar-toggler-icon"></span>
+
 </button>
 
 
-<div class="collapse navbar-collapse" id="menu">
+
+<div class="collapse navbar-collapse" id="navbarMenu">
+
 
 <ul class="navbar-nav ms-auto">
 
-<li class="nav-item">
-<a class="nav-link" href="#">Home</a>
-</li>
 
 <li class="nav-item">
-<a class="nav-link" href="#shop">Shop</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#about">About</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#contact">Contact</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#cart">
-🛒 Cart (<span id="cart-count">0</span>)
+<a class="nav-link" href="#">
+Home
 </a>
 </li>
 
+
+<li class="nav-item">
+<a class="nav-link" href="#shop">
+Shop
+</a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="#categories">
+Categories
+</a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="#contact">
+Contact
+</a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="#cart">
+🛒 Cart
+<span id="cart-count" class="badge bg-danger">
+0
+</span>
+</a>
+</li>
+
+
 </ul>
+
 
 </div>
 
@@ -65,23 +97,76 @@ InkStyle
 
 
 
-<!-- Hero -->
+
+
+<!-- Hero Section -->
+
 
 <section class="hero">
 
-<div class="container text-center">
+<div class="container">
+
+
+<div class="row align-items-center">
+
+
+<div class="col-lg-6">
+
 
 <h1>
 Wear Your Style
 </h1>
 
+
 <p>
 Premium Anime, Oversized & Streetwear T-Shirts
 </p>
 
+
 <a href="#shop" class="btn btn-dark btn-lg">
+
 Shop Now
+
 </a>
+
+
+</div>
+
+
+
+<div class="col-lg-6 text-center">
+
+
+<img src="images/banner.jpg"
+class="img-fluid rounded"
+alt="InkStyle Collection">
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+  <!-- Search Section -->
+
+<section class="container my-5">
+
+<div class="row justify-content-center">
+
+<div class="col-md-7">
+
+<input 
+type="text"
+id="searchInput"
+class="form-control form-control-lg"
+placeholder="🔍 Search T-Shirts...">
+
+</div>
 
 </div>
 
@@ -89,83 +174,38 @@ Shop Now
 
 
 
-<!-- Search -->
-
-<section class="container my-5">
-
-<input 
-id="search"
-class="form-control form-control-lg"
-placeholder="Search T-Shirts..."
->
-
-</section>
 
 
+<!-- Categories Section -->
+
+<section id="categories" class="container my-5">
 
 
-<!-- Products -->
+<h2 class="text-center fw-bold mb-4">
 
-<section id="shop" class="container my-5">
+Shop By Category
 
-<h2 class="text-center mb-4">
-Featured Products
 </h2>
+
 
 
 <div class="row g-4">
 
 
-<div class="col-md-4 product">
 
-<div class="card p-3">
+<div class="col-md-3">
 
-<img src="https://placehold.co/400x400?text=Anime+T-Shirt" class="card-img-top" alt="Anime T-Shirt">
-  
-<h3>Anime Collection</h3>
+<div class="category-card text-center p-4">
 
-<p>Premium Anime Printed T-Shirt</p>
+<h3>🎌 Anime</h3>
 
-⭐ ⭐ ⭐ ⭐ ⭐
+<p>Anime Printed Collection</p>
 
-<h5>Rs. 1999</h5>
+<button class="btn btn-dark category-btn"
+data-category="anime">
 
-<button class="btn btn-primary add-cart"
-data-name="Anime Collection">
-Add To Cart
-</button>
+Explore
 
-<button class="btn btn-danger wishlist mt-2">
-❤️ Wishlist
-</button>
-
-</div>
-
-</div>
-
-
-
-<div class="col-md-4 product">
-
-<div class="card p-3">
-
-<img src="https://placehold.co/400x400?text=Oversized+T-Shirt" class="card-img-top" alt="Oversized T-Shirt">
-  
-<h3>Oversized</h3>
-
-<p>Comfort Cotton Oversized Shirt</p>
-
-⭐ ⭐ ⭐ ⭐
-
-<h5>Rs. 2499</h5>
-
-<button class="btn btn-primary add-cart"
-data-name="Oversized">
-Add To Cart
-</button>
-
-<button class="btn btn-danger wishlist mt-2">
-❤️ Wishlist
 </button>
 
 </div>
@@ -175,38 +215,75 @@ Add To Cart
 
 
 
-<div class="col-md-4 product">
+<div class="col-md-3">
 
-<div class="card p-3">
+<div class="category-card text-center p-4">
 
-<img src="https://placehold.co/400x400?text=Street+Wear+T-Shirt" class="card-img-top" alt="Street Wear T-Shirt">
-  
-<h3>Street Wear</h3>
+<h3>🏙️ Streetwear</h3>
 
-<p>Modern Fashion Collection</p>
+<p>Modern Street Fashion</p>
 
-⭐ ⭐ ⭐ ⭐ ⭐
+<button class="btn btn-dark category-btn"
+data-category="streetwear">
 
-<h5>Rs. 2999</h5>
+Explore
 
-
-<button class="btn btn-primary add-cart"
-data-name="Street Wear">
-Add To Cart
 </button>
 
+</div>
 
-<button class="btn btn-danger wishlist mt-2">
-❤️ Wishlist
+</div>
+
+
+
+
+
+<div class="col-md-3">
+
+<div class="category-card text-center p-4">
+
+<h3>👕 Oversized</h3>
+
+<p>Comfort & Style</p>
+
+<button class="btn btn-dark category-btn"
+data-category="oversized">
+
+Explore
+
 </button>
 
+</div>
+
+</div>
+
+
+
+
+
+<div class="col-md-3">
+
+<div class="category-card text-center p-4">
+
+<h3>👑 Premium</h3>
+
+<p>Luxury Collection</p>
+
+<button class="btn btn-dark category-btn"
+data-category="premium">
+
+Explore
+
+</button>
 
 </div>
 
 </div>
 
 
+
 </div>
+
 
 </section>
 
@@ -214,37 +291,1014 @@ Add To Cart
 
 
 
-<!-- Cart -->
+<!-- Products Section -->
 
-<section id="cart" class="container my-5">
 
-<h2>
-Your Cart
+<section id="shop" class="container my-5">
+
+
+<h2 class="text-center fw-bold mb-5">
+
+🔥 Trending Products
+
 </h2>
 
 
-<ul id="cart-items">
+
+<div class="row g-4" id="productList">
+
+  <!-- Product 1 -->
+
+<div class="col-lg-3 col-md-6 product"
+data-category="anime">
+
+
+<div class="card product-card h-100">
+
+
+<img src="images/anime1.jpg"
+class="card-img-top"
+alt="Anime T-Shirt">
+
+
+<div class="card-body">
+
+
+<h5>
+Anime Collection
+</h5>
+
+
+<p>
+Premium Anime Printed T-Shirt
+</p>
+
+
+<div>
+⭐⭐⭐⭐⭐
+</div>
+
+
+<h4>
+Rs. 1999
+</h4>
+
+
+
+<button class="btn btn-primary w-100 add-cart"
+data-name="Anime Collection"
+data-price="1999">
+
+🛒 Add To Cart
+
+</button>
+
+
+
+<button class="btn btn-outline-danger w-100 mt-2 wishlist">
+
+❤️ Wishlist
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- Product 2 -->
+
+
+<div class="col-lg-3 col-md-6 product"
+data-category="oversized">
+
+
+<div class="card product-card h-100">
+
+
+<img src="images/oversized1.jpg"
+class="card-img-top"
+alt="Oversized T-Shirt">
+
+
+<div class="card-body">
+
+
+<h5>
+Oversized Black
+</h5>
+
+
+<p>
+Premium Cotton Oversized Shirt
+</p>
+
+
+<div>
+⭐⭐⭐⭐
+</div>
+
+
+<h4>
+Rs. 2499
+</h4>
+
+
+
+<button class="btn btn-primary w-100 add-cart"
+data-name="Oversized Black"
+data-price="2499">
+
+🛒 Add To Cart
+
+</button>
+
+
+
+<button class="btn btn-outline-danger w-100 mt-2 wishlist">
+
+❤️ Wishlist
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- Product 3 -->
+
+
+<div class="col-lg-3 col-md-6 product"
+data-category="streetwear">
+
+
+<div class="card product-card h-100">
+
+
+<img src="images/streetwear1.jpg"
+class="card-img-top"
+alt="Street Wear">
+
+
+<div class="card-body">
+
+
+<h5>
+Street Wear
+</h5>
+
+
+<p>
+Modern Fashion Collection
+</p>
+
+
+<div>
+⭐⭐⭐⭐⭐
+</div>
+
+
+<h4>
+Rs. 2299
+</h4>
+
+
+
+<button class="btn btn-primary w-100 add-cart"
+data-name="Street Wear"
+data-price="2299">
+
+🛒 Add To Cart
+
+</button>
+
+
+
+<button class="btn btn-outline-danger w-100 mt-2 wishlist">
+
+❤️ Wishlist
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- Product 4 -->
+
+
+<div class="col-lg-3 col-md-6 product"
+data-category="premium">
+
+
+<div class="card product-card h-100">
+
+
+<img src="images/premium1.jpg"
+class="card-img-top"
+alt="Premium T-Shirt">
+
+
+<div class="card-body">
+
+
+<h5>
+Premium Collection
+</h5>
+
+
+<p>
+Luxury Printed T-Shirt
+</p>
+
+
+<div>
+⭐⭐⭐⭐⭐
+</div>
+
+
+<h4>
+Rs. 2699
+</h4>
+
+
+
+<button class="btn btn-primary w-100 add-cart"
+data-name="Premium Collection"
+data-price="2699">
+
+🛒 Add To Cart
+
+</button>
+
+
+
+<button class="btn btn-outline-danger w-100 mt-2 wishlist">
+
+❤️ Wishlist
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+  <!-- Product 5 -->
+
+<div class="col-lg-3 col-md-6 product"
+data-category="anime">
+
+<div class="card product-card h-100">
+
+<img src="images/anime2.jpg"
+class="card-img-top"
+alt="Anime T-Shirt">
+
+
+<div class="card-body">
+
+<h5>
+Demon Anime
+</h5>
+
+<p>
+Trending Anime Print
+</p>
+
+<div>
+⭐⭐⭐⭐⭐
+</div>
+
+<h4>
+Rs. 2199
+</h4>
+
+
+<button class="btn btn-primary w-100 add-cart"
+data-name="Demon Anime"
+data-price="2199">
+
+🛒 Add To Cart
+
+</button>
+
+
+<button class="btn btn-outline-danger w-100 mt-2 wishlist">
+
+❤️ Wishlist
+
+</button>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Product 6 -->
+
+<div class="col-lg-3 col-md-6 product"
+data-category="streetwear">
+
+<div class="card product-card h-100">
+
+
+<img src="images/streetwear2.jpg"
+class="card-img-top"
+alt="Street Wear">
+
+
+<div class="card-body">
+
+
+<h5>
+Urban Style
+</h5>
+
+
+<p>
+Modern Street Fashion
+</p>
+
+
+<div>
+⭐⭐⭐⭐
+</div>
+
+
+<h4>
+Rs. 2399
+</h4>
+
+
+<button class="btn btn-primary w-100 add-cart"
+data-name="Urban Style"
+data-price="2399">
+
+🛒 Add To Cart
+
+</button>
+
+
+<button class="btn btn-outline-danger w-100 mt-2 wishlist">
+
+❤️ Wishlist
+
+</button>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Product 7 -->
+
+
+<div class="col-lg-3 col-md-6 product"
+data-category="oversized">
+
+
+<div class="card product-card h-100">
+
+
+<img src="images/oversized2.jpg"
+class="card-img-top"
+alt="Oversized">
+
+
+<div class="card-body">
+
+
+<h5>
+Oversized White
+</h5>
+
+
+<p>
+Comfort Daily Wear
+</p>
+
+
+<div>
+⭐⭐⭐⭐⭐
+</div>
+
+
+<h4>
+Rs. 2499
+</h4>
+
+
+<button class="btn btn-primary w-100 add-cart"
+data-name="Oversized White"
+data-price="2499">
+
+🛒 Add To Cart
+
+</button>
+
+
+<button class="btn btn-outline-danger w-100 mt-2 wishlist">
+
+❤️ Wishlist
+
+</button>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Product 8 -->
+
+
+<div class="col-lg-3 col-md-6 product"
+data-category="premium">
+
+
+<div class="card product-card h-100">
+
+
+<img src="images/premium2.jpg"
+class="card-img-top"
+alt="Premium">
+
+
+<div class="card-body">
+
+
+<h5>
+Luxury Edition
+</h5>
+
+
+<p>
+Premium Brand Collection
+</p>
+
+
+<div>
+⭐⭐⭐⭐⭐
+</div>
+
+
+<h4>
+Rs. 2999
+</h4>
+
+
+<button class="btn btn-primary w-100 add-cart"
+data-name="Luxury Edition"
+data-price="2999">
+
+🛒 Add To Cart
+
+</button>
+
+
+<button class="btn btn-outline-danger w-100 mt-2 wishlist">
+
+❤️ Wishlist
+
+</button>
+
+
+</div>
+
+</div>
+
+</div>
+
+  <!-- Product 9 -->
+
+<div class="col-lg-3 col-md-6 product"
+data-category="anime">
+
+<div class="card product-card h-100">
+
+<img src="images/anime3.jpg"
+class="card-img-top"
+alt="Anime">
+
+
+<div class="card-body">
+
+<h5>
+Samurai Anime
+</h5>
+
+<p>
+Premium Anime Style
+</p>
+
+<div>
+⭐⭐⭐⭐⭐
+</div>
+
+
+<h4>
+Rs. 2199
+</h4>
+
+
+<button class="btn btn-primary w-100 add-cart"
+data-name="Samurai Anime"
+data-price="2199">
+
+🛒 Add To Cart
+
+</button>
+
+
+<button class="btn btn-outline-danger w-100 mt-2 wishlist">
+
+❤️ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Product 10 -->
+
+
+<div class="col-lg-3 col-md-6 product"
+data-category="streetwear">
+
+
+<div class="card product-card h-100">
+
+
+<img src="images/streetwear3.jpg"
+class="card-img-top"
+alt="Streetwear">
+
+
+<div class="card-body">
+
+
+<h5>
+Classic Street
+</h5>
+
+
+<p>
+Modern Urban Look
+</p>
+
+
+<div>
+⭐⭐⭐⭐
+</div>
+
+
+<h4>
+Rs. 2399
+</h4>
+
+
+<button class="btn btn-primary w-100 add-cart"
+data-name="Classic Street"
+data-price="2399">
+
+🛒 Add To Cart
+
+</button>
+
+
+<button class="btn btn-outline-danger w-100 mt-2 wishlist">
+
+❤️ Wishlist
+
+</button>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Product 11 -->
+
+
+<div class="col-lg-3 col-md-6 product"
+data-category="oversized">
+
+
+<div class="card product-card h-100">
+
+
+<img src="images/oversized3.jpg"
+class="card-img-top"
+alt="Oversized">
+
+
+<div class="card-body">
+
+
+<h5>
+Drop Shoulder
+</h5>
+
+
+<p>
+Premium Oversized Fit
+</p>
+
+
+<div>
+⭐⭐⭐⭐⭐
+</div>
+
+
+<h4>
+Rs. 2599
+</h4>
+
+
+<button class="btn btn-primary w-100 add-cart"
+data-name="Drop Shoulder"
+data-price="2599">
+
+🛒 Add To Cart
+
+</button>
+
+
+<button class="btn btn-outline-danger w-100 mt-2 wishlist">
+
+❤️ Wishlist
+
+</button>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Product 12 -->
+
+
+<div class="col-lg-3 col-md-6 product"
+data-category="premium">
+
+
+<div class="card product-card h-100">
+
+
+<img src="images/premium3.jpg"
+class="card-img-top"
+alt="Premium">
+
+
+<div class="card-body">
+
+
+<h5>
+Signature Edition
+</h5>
+
+
+<p>
+High Quality Premium Tee
+</p>
+
+
+<div>
+⭐⭐⭐⭐⭐
+</div>
+
+
+<h4>
+Rs. 2999
+</h4>
+
+
+<button class="btn btn-primary w-100 add-cart"
+data-name="Signature Edition"
+data-price="2999">
+
+🛒 Add To Cart
+
+</button>
+
+
+<button class="btn btn-outline-danger w-100 mt-2 wishlist">
+
+❤️ Wishlist
+
+</button>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+  <!-- Cart Section -->
+
+<section id="cart" class="container my-5">
+
+<h2 class="fw-bold text-center mb-4">
+🛒 Your Cart
+</h2>
+
+
+<div class="row">
+
+
+<div class="col-lg-8">
+
+
+<ul id="cartItems" class="list-group">
 
 </ul>
 
 
+</div>
+
+
+
+<div class="col-lg-4">
+
+
+<div class="card p-4 shadow-sm">
+
+
+<h4>
+Order Summary
+</h4>
+
+
+<hr>
+
+
+<p>
+Total Items:
+<span id="totalItems">
+0
+</span>
+</p>
+
+
+<h4>
+Total:
+Rs.
+<span id="cartTotal">
+0
+</span>
+</h4>
+
+
+
+<button class="btn btn-success w-100 mt-3"
+onclick="openCheckout()">
+
+Proceed To Checkout
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
 </section>
 
 
 
 
 
-<!-- About -->
+
+<!-- Checkout Section -->
+
+
+<section id="checkout"
+class="container my-5 d-none">
+
+
+<div class="card p-4 shadow">
+
+
+<h2>
+Checkout
+</h2>
+
+
+
+<input type="text"
+class="form-control mb-3"
+placeholder="Your Name"
+id="customerName">
+
+
+
+<input type="text"
+class="form-control mb-3"
+placeholder="Phone Number"
+id="customerPhone">
+
+
+
+<input type="text"
+class="form-control mb-3"
+placeholder="City"
+id="customerCity">
+
+
+
+<textarea
+class="form-control mb-3"
+placeholder="Full Address"
+id="customerAddress">
+</textarea>
+
+
+
+
+<h4>
+Payment Method
+</h4>
+
+
+<div class="form-check">
+
+<input class="form-check-input"
+type="radio"
+name="payment"
+checked>
+
+<label class="form-check-label">
+
+JazzCash / EasyPaisa
+
+</label>
+
+</div>
+
+
+
+<div class="form-check">
+
+<input class="form-check-input"
+type="radio"
+name="payment">
+
+
+<label class="form-check-label">
+
+Bank Transfer
+
+</label>
+
+
+</div>
+
+
+
+
+
+<button class="btn btn-primary mt-3"
+onclick="whatsappOrder()">
+
+📱 Order On WhatsApp
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+  <!-- About Section -->
 
 <section id="about" class="container my-5">
 
-<h2>
-About Us
+<div class="row align-items-center">
+
+
+<div class="col-lg-6">
+
+<h2 class="fw-bold">
+
+About InkStyle
+
 </h2>
 
+
 <p>
-InkStyle brings modern fashion, anime and streetwear collections with premium quality.
+
+InkStyle is a modern fashion store
+where you can find premium printed
+T-Shirts, Anime designs, Oversized
+and Streetwear collections.
+
 </p>
+
+
+<p>
+
+Our goal is to bring stylish,
+comfortable and trendy fashion
+for everyone.
+
+</p>
+
+
+</div>
+
+
+
+<div class="col-lg-6 text-center">
+
+<img src="images/about.jpg"
+class="img-fluid rounded"
+alt="About InkStyle">
+
+</div>
+
+
+</div>
 
 </section>
 
@@ -252,17 +1306,94 @@ InkStyle brings modern fashion, anime and streetwear collections with premium qu
 
 
 
-<!-- Contact -->
+
+
+<!-- Contact Section -->
+
 
 <section id="contact" class="container my-5">
 
-<h2>
-Contact
+
+<h2 class="fw-bold text-center mb-4">
+
+Contact Us
+
 </h2>
 
+
+
+<div class="row">
+
+
+<div class="col-md-6">
+
+
+<input type="text"
+class="form-control mb-3"
+placeholder="Your Name">
+
+
+
+<input type="email"
+class="form-control mb-3"
+placeholder="Email">
+
+
+
+<textarea
+class="form-control mb-3"
+rows="5"
+placeholder="Your Message">
+
+</textarea>
+
+
+
+<button class="btn btn-dark">
+
+Send Message
+
+</button>
+
+
+</div>
+
+
+
+
+<div class="col-md-6">
+
+
+<h4>
+Get In Touch
+</h4>
+
+
 <p>
-WhatsApp: 03XXXXXXXXX
+📱 WhatsApp: +92 300 1234567
 </p>
+
+
+<p>
+📍 Pakistan
+</p>
+
+
+<p>
+📷 Instagram: @inkstyle
+</p>
+
+
+<p>
+🎵 TikTok: @inkstyle
+</p>
+
+
+</div>
+
+
+</div>
+
 
 </section>
 
@@ -270,22 +1401,118 @@ WhatsApp: 03XXXXXXXXX
 
 
 
-<footer class="text-center p-4">
+
+<!-- Footer -->
+
+
+<footer class="bg-dark text-white text-center py-4">
+
 
 <p>
+
 © 2026 InkStyle Store
+
 </p>
+
+
+<p>
+
+Anime • Oversized • Streetwear
+
+</p>
+
 
 </footer>
 
+  <!-- WhatsApp Floating Button -->
 
+<a href="#"
+class="whatsapp-btn">
+
+💬
+
+</a>
+
+
+
+
+<!-- Product Details Modal -->
+
+<div class="modal fade"
+id="productModal"
+tabindex="-1">
+
+
+<div class="modal-dialog">
+
+<div class="modal-content">
+
+
+<div class="modal-header">
+
+<h5 class="modal-title">
+
+Product Details
+
+</h5>
+
+
+<button type="button"
+class="btn-close"
+data-bs-dismiss="modal">
+
+</button>
+
+
+</div>
+
+
+
+<div class="modal-body">
+
+
+<h3 id="modalProductName">
+
+</h3>
+
+
+<p id="modalProductPrice">
+
+</p>
+
+
+<p>
+
+Premium quality printed T-Shirt.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<!-- JavaScript -->
 
 <script src="script.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js">
+
+</script>
 
 
 </body>
 
-  </html>
-
+</html>
