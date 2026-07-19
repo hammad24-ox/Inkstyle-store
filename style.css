@@ -210,3 +210,9 @@ font-size:40px;
 }
 
 }
+
+.card img{
+height:250px;
+object-fit:cover;
+border-radius:20px;
+}
