@@ -109,3 +109,36 @@ footer{
     padding:25px;
     margin-top:70px;
 }
+
+.hero{
+    background: linear-gradient(135deg,#111,#333);
+    color:white;
+    min-height:70vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:4rem;
+    font-weight:800;
+}
+
+.hero p{
+    font-size:1.3rem;
+    margin:20px 0;
+}
+
+.card{
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    height:350px;
+    object-fit:cover;
+}
