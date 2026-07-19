@@ -1,4 +1,3 @@
-console.log("InkStyle Store Loaded Successfully!");
 let cart = [];
 
 let buttons = document.querySelectorAll(".add-cart");
